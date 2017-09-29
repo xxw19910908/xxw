@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			LI {
+				list-style: none;
+				line-height: 20px;
+				cursor: pointer;
+			}
+			
+			.current {
+				background: #6cf;
+				font-size: 23px;
+				font-weight: bold;
+				color: #fff;
+			}
+		</style>
+	</head>
+
+	<body>
+		<ul>
+			<li id="current">1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+		</ul>
+		<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+
+		<script type="text/javascript">
+			
+			$(document).ready(function(){
+				$("li").click(function(){
+					$(this).addClass("current")
+				});
+			});
+		</script>
+
+	</body>
+
+</html>
